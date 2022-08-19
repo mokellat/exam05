@@ -8,9 +8,13 @@ class Warlock{
     public:
         Warlock(std::string, std::string);
         ~Warlock();
+    
     private:
         std::string                 _name;
         std::string                 _title;
+        Warlock(Warlock &cp);
+        Warlock &operator=(Warlock &cp);
+
 
     public:
         const std::string           &getName() const;
