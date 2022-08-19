@@ -4,7 +4,7 @@ Warlock::Warlock(std::string name, std::string title)
 {
     this->_name = name;
     this->_title = title;
-    std::cout << getName() << ": This looks like another boring day."<< std::endl;
+    std::cout << getName() << ": This looks like another boring day." << std::endl;
 }
 
 const std::string &Warlock::getName() const
