@@ -10,3 +10,5 @@ ASpell *Fwoosh::pure() const
 {
     return (new Fwoosh());
 }
+
+Fwoosh::~Fwoosh(){}

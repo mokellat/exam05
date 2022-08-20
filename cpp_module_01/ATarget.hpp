@@ -2,8 +2,10 @@
 #define ATARGET_HPP
 
 #include <iostream>
-#include "ASpell.hpp"
 
+class ASpell;
+
+#include "ASpell.hpp"
 class ATarget
 {   
     public:
@@ -16,7 +18,7 @@ class ATarget
     public:
         const std::string           &getType() const;
         virtual ATarget *pure() const = 0;
-        void    getHitBySpell(const ASpell&);
+        void    getHitBySpell(const ASpell &);
 
     public:
         ATarget();

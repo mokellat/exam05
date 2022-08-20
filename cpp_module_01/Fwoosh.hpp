@@ -4,7 +4,7 @@
 #include <iostream>
 #include "ASpell.hpp"
 
-class Fwoosh : ASpell
+class Fwoosh : public ASpell
 {
     public:
         Fwoosh();

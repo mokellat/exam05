@@ -4,7 +4,7 @@
 #include <iostream>
 #include "ATarget.hpp"
 
-class Dummy : ATarget
+class Dummy : public ATarget
 {
     public:
     Dummy();

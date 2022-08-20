@@ -2,8 +2,10 @@
 #define ASPELL_HPP
 
 #include <iostream>
-#include "ATarget.hpp"
 
+class ATarget;
+
+#include "ATarget.hpp"
 class ASpell
 {   
     public:
@@ -23,7 +25,7 @@ class ASpell
     public:
         ASpell();
         ASpell(std::string, std::string);
-        ~ASpell();
+        virtual ~ASpell();
 };
 
 #endif

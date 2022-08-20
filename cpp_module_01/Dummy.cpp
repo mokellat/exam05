@@ -9,3 +9,5 @@ ATarget *Dummy::pure() const
 {
     return (new Dummy());
 }
+
+Dummy::~Dummy(){}

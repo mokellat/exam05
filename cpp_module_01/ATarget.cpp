@@ -27,3 +27,5 @@ ATarget &ATarget::operator=(ATarget &cp)
     this->type = cp.type;
     return *this;
 }
+
+ATarget::~ATarget(){}

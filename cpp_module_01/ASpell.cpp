@@ -35,3 +35,5 @@ void    ASpell::launch(ATarget &cp) const
 {
     cp.getHitBySpell(*this);
 }
+
+ASpell::~ASpell(){}
