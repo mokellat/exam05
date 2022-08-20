@@ -1,5 +1,4 @@
 #include "ATarget.hpp"
-#include "ASpell.hpp"
 
 ATarget::ATarget(std::string type)
 {
@@ -14,4 +13,15 @@ const std::string           &ATarget::getType() const
 void    ATarget::getHitBySpell(const ASpell &cp)
 {
     std::cout << getType() << " has been " << cp.getEffects() << "!" << std::endl; 
+}
+
+ATarget::ATarget(ATarget &cp)
+{
+    this->type = cp.type;
+}
+
+ATarget &ATarget::operator=(ATarget &cp)
+{
+    this->type = cp.type;
+    return *this;
 }

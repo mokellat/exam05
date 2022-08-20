@@ -6,16 +6,16 @@
 
 class ATarget
 {   
-    private:
-        ATarget();
+    public:
+        ATarget(ATarget &cp);
         ATarget &operator=(ATarget &cp);
 
-    private:
+    protected:
         std::string type;
 
     public:
         const std::string           &getType() const;
-        virtual ATarget *pure() = 0;
+        virtual ATarget *pure() const = 0;
         void    getHitBySpell(const ASpell&);
 
     public:

@@ -28,3 +28,8 @@ ASpell &ASpell::operator=(ASpell &cp)
     this->effects = cp.effects;
     return *this;
 }
+
+void    ASpell::launch(const ATarget &cp)
+{
+    cp.getHitBySpell(*this);
+}

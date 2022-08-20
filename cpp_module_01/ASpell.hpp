@@ -2,6 +2,7 @@
 #define ASPELL_HPP
 
 #include <iostream>
+#include "ATarget.hpp"
 
 class ASpell
 {   
@@ -16,7 +17,8 @@ class ASpell
     public:
         const std::string           &getName() const;
         const std::string           &getEffects() const;
-        virtual ASpell *pure() = 0;
+        void                        launch(const ATarget &) const;
+        virtual ASpell *pure() const = 0;
 
     public:
         ASpell(std::string, std::string);
