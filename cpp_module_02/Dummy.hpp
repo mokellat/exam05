@@ -7,9 +7,9 @@
 class Dummy : public ATarget
 {
     public:
-    Dummy();
-    ~Dummy();
-    virtual ATarget *pure() const;
+        Dummy();
+        ~Dummy();
+        virtual ATarget *pure() const;
 };
 
 #endif
