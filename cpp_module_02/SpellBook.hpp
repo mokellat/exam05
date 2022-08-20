@@ -2,6 +2,7 @@
 #define ATARGET_HPP
 
 #include <iostream>
+#include <vector>
 #include "ASpell.hpp"
 
 
@@ -16,7 +17,7 @@ class SpellBook
         ~SpellBook();
 
     private:
-        std::string type;
+        std:vector<ASpell *> _store;
     
     public:
         void    learnSpell(ASpell*);
