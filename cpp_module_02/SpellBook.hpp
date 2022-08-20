@@ -11,13 +11,12 @@ class SpellBook
     
     public:
         SpellBook();
-        SpellBook(std::string);
-        SpellBook(SpellBook &cp);
-        SpellBook &operator=(SpellBook &cp);
         ~SpellBook();
 
     private:
-        std:vector<ASpell *> _store;
+        std::vector<ASpell *> _store;
+        SpellBook(SpellBook &cp);
+        SpellBook &operator=(SpellBook &cp);
     
     public:
         void    learnSpell(ASpell*);
