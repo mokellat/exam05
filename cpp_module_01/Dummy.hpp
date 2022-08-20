@@ -10,6 +10,6 @@ class Dummy : ATarget
     Dummy();
     ~Dummy();
     virtual ATarget *pure() const;
-}
+};
 
 #endif

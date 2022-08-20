@@ -2,11 +2,11 @@
 
 Fwoosh::Fwoosh()
 {
-    this-name = "Fwoosh";
+    this->name = "Fwoosh";
     this->effects = "fwooshed";
 }
 
-Aspell *Fwoosh::pure() const
+ASpell *Fwoosh::pure() const
 {
     return (new Fwoosh());
 }

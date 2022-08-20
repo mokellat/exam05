@@ -7,7 +7,7 @@
 class ASpell
 {   
     public:
-        ASpell(ASpell &cp);
+        ASpell(const ASpell &cp);
         ASpell &operator=(ASpell &cp);
 
     protected:
@@ -17,10 +17,11 @@ class ASpell
     public:
         const std::string           &getName() const;
         const std::string           &getEffects() const;
-        void                        launch(const ATarget &) const;
-        virtual ASpell *pure() const = 0;
+        void                        launch(ATarget &) const;
+        virtual                     ASpell *pure() const = 0;
 
     public:
+        ASpell();
         ASpell(std::string, std::string);
         ~ASpell();
 };

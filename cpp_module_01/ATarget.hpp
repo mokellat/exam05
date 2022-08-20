@@ -19,6 +19,7 @@ class ATarget
         void    getHitBySpell(const ASpell&);
 
     public:
+        ATarget();
         ATarget(std::string);
         ~ATarget();
 };
