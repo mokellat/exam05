@@ -1,3 +1,10 @@
+#include "Warlock.hpp"
+#include "ATarget.hpp"
+#include "BrickWall.hpp"
+#include "Fireball.hpp"
+#include "Polymorph.hpp"
+#include "TargetGenerator.hpp"
+
 int main()
 {
   Warlock richard("Richard", "foo");
@@ -19,4 +26,6 @@ int main()
   richard.introduce();
   richard.launchSpell("Polymorph", *wall);
   richard.launchSpell("Fireball", *wall);
+
+  return 0;
 }

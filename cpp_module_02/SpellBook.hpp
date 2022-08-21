@@ -1,5 +1,5 @@
-#ifndef ATARGET_HPP
-#define ATARGET_HPP
+#ifndef SPELLBOOK_HPP
+#define SPELLBOOK_HPP
 
 #include <iostream>
 #include <vector>

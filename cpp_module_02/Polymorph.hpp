@@ -1,5 +1,5 @@
-#ifndef FIREBALL_HPP
-#define FIREBALL_HPP
+#ifndef POLYMORPH_HPP
+#define POLYMORPH_HPP
 
 #include <iostream>
 #include "ASpell.hpp"

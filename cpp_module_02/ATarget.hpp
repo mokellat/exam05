@@ -23,7 +23,7 @@ class ATarget
     public:
         ATarget();
         ATarget(std::string);
-        ~ATarget();
+        virtual ~ATarget();
 };
 
 #endif

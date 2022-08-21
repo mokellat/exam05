@@ -1,8 +1,8 @@
-#ifndef DUMMY_HPP
-#define DUMMY_HPP
+#ifndef BRICKWALL_HPP
+#define BRICKWALL_HPP
 
-#include <iostream>
 #include "ATarget.hpp"
+#include <iostream>
 
 class BrickWall : public ATarget
 {
