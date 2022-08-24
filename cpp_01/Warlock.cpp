@@ -33,7 +33,7 @@ Warlock::~Warlock()
     std::cout << this->_name << ": My job here is done!" << std::endl;
 }
 
-void    Warlock::learnSpell(ASpell *aspell) const
+void    Warlock::learnSpell(ASpell *aspell)
 {
     if(aspell)
     {
@@ -48,7 +48,7 @@ void    Warlock::learnSpell(ASpell *aspell) const
     }
 }
 
-void    Warlock::forgetSpell(std::string name) const
+void    Warlock::forgetSpell(std::string name)
 {
     std::vector<ASpell *>::iterator ite = this->_store.end();
     std::vector<ASpell *>::iterator it;
@@ -62,7 +62,7 @@ void    Warlock::forgetSpell(std::string name) const
     }
 }
 
-void    Warlock::launchSpell(std::string name, Atarget &atarget) const
+void    Warlock::launchSpell(std::string name, ATarget &atarget)
 {
     std::vector<ASpell *>::iterator ite = this->_store.end();
     std::vector<ASpell *>::iterator it;
@@ -70,7 +70,7 @@ void    Warlock::launchSpell(std::string name, Atarget &atarget) const
     {
         if((*it)->getName() == name)
         {
-            (*it)->launch(target);
+            (*it)->launch(atarget);
             return ;
         }
     }

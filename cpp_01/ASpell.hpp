@@ -2,6 +2,9 @@
 #define ASPELL_HPP
 
 #include <iostream>
+
+class ATarget;
+
 #include "ATarget.hpp"
 
 class ASpell

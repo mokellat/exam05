@@ -21,9 +21,9 @@ class Warlock
         void                    setTitle(const std::string &);
         void                    introduce() const;
 
-        void                    learnSpell(ASpell *) const;
-        void                    forgetSpell(std::string) const;
-        void                    launchSpell(std::string, ATarget &) const;
+        void                    learnSpell(ASpell *);
+        void                    forgetSpell(std::string);
+        void                    launchSpell(std::string, ATarget &);
 
     public:
         Warlock(std::string, std::string);
